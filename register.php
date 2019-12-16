@@ -9,6 +9,7 @@
             <input type="password" placeholder="password" name="password">
             <input type="password" placeholder="password_confirm" name="password_confirm">
             <input type="submit" value="Créer un compte">
+            lucie
         </form>
     </div>
 </body>
