@@ -6,6 +6,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 h1{
     font-family: 'Pacifico', cursive;
@@ -35,8 +36,10 @@ h1{
 .form-container h1{
     text-align: center;
 }
-
-a{
-    font-size: 20px;
-    color: #fff;
-  }
+.message{
+    color: #e74c3c;
+    font-size: 1.3rem;
+}
+.users{
+    width: 100%;
+}
