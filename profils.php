@@ -5,9 +5,12 @@
         header("Location: login.php");
     }
     echo "Bonjour " . $_SESSION["pseudo"];
-?>
 
-<a href="functions/disconnect.php">Disconnect</a>
+   //$req = $db->prepare("SELECT FROM users WHERE id = :id");
+   //$req->bindParam(":id" , $_GET["user_id"]);
+   //$req->execute();
+?>
+<a href="functions/disconnect.php"> Deconnexion </a>
 
 <div class="users">
     <?php
@@ -22,8 +25,9 @@
     while($result = $req->fetch(PDO::FETCH_ASSOC)){
         ?>
             <div>
-                <strong><?= $result["pseudo"] ?></strong>
+                <strong><?php echo $result["pseudo"]; ?></strong>
                 <a href="functions/deleteUser.php?user_id=<?php echo $result["id"]; ?>">Supprimer</a>
+                <a href="userEditForm.php?user_id=<?= $result["id"] ?>&user_pseudo=<?= $result["pseudo"] ?>">Modifier Pseudo</a>
             </div>
         <?php
     }
