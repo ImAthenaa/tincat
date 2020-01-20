@@ -6,7 +6,7 @@
         <form action="functions/loginAction.php" method="post">
             <input type="text" placeholder="pseudo" name="pseudo">
             <input type="password" placeholder="password" name="password">
-            <input type="submit" value="login">
+            <input type="submit" value="Connexion">
         </form>
 
         <a href="register.php">Pas encore de compte ?</a>
